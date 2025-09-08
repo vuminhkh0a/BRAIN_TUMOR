@@ -3,7 +3,6 @@ from streamlit_option_menu import option_menu
 import numpy as np
 import pandas as pd
 import seaborn as sns
-import seaborn.objects as so
 import matplotlib.pyplot as plt
 import os
 from PIL import Image
@@ -11,7 +10,6 @@ import torch
 import torch.nn as nn
 from torchvision.transforms import v2
 from torchvision.models import resnet50
-from sklearn.metrics import multilabel_confusion_matrix, ConfusionMatrixDisplay
 
 import model
 from model import test_transform, model

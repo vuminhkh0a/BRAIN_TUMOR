@@ -22,7 +22,7 @@ if input_image:
   st.write('Received')
   input_image = np.asarray(bytearray(input_image.read()))
 
-plt.imshow(input_image)
+plt.imshow(input_image.permute(1, 2, 0))
 
 test_transform = v2.Compose([
     v2.PILToTensor(),

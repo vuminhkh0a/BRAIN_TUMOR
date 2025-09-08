@@ -17,9 +17,7 @@ from model import test_transform, model
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-# st.set_page_config(page_title='Brain MRI Diagnosis App')
-# st.sidebar.success('Please select a page')
-# st.title('Brain MRI Diagnosis App')
+st.title('Brain MRI Diagnosis App')
 
 if st.button("Home"):
     st.switch_page("streamlit_app.py")

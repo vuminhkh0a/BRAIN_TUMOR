@@ -69,12 +69,12 @@ if input_image is not None:
     input_image = test_transform(input_image).to(device)
     prediction = model(input_image.unsqueeze(0))
     sm = nn.Softmax(dim=1)
-    
     prediction = sm(prediction)
-    st.write(prediction)
 
     # Plot
     prediction = prediction.squeeze().numpy()
+    encode_label = {0:'glioma', 1:'meningioma', 2:'notumor', 3:'pituitary'}
+    st.write('Predicted class:': encode_label[np.argmax(prediction)])
     fig = plt.figure(figsize=(10, 10))
     sns.barplot(x=prediction, y=['glioma', 'meningioma', 'notumor', 'pituitary'])
     st.pyplot(fig)

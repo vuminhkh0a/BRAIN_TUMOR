@@ -4,18 +4,12 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import os
-import cv2
 from PIL import Image
 import torch
 import torch.nn as nn
-from torch.nn import CrossEntropyLoss
-import torch.optim as optim
-import torch.optim.lr_scheduler as lr_scheduler
-from torch.utils.data import random_split, Dataset, DataLoader, Subset
 from torchvision.transforms import v2
-from torchvision.models import resnet50, ResNet50_Weights, efficientnet_b0, EfficientNet_B0_Weights
+from torchvision.models import resnet50
 from sklearn.metrics import multilabel_confusion_matrix, ConfusionMatrixDisplay
-from huggingface_hub import hf_hub_download
 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')

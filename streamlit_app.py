@@ -17,7 +17,7 @@ from model import test_transform, model
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 st.set_page_config(page_title='Brain MRI Diagnosis App')
-st.sidebar()
+st.sidebar.success('Please select a page')
 st.title('Brain MRI Diagnosis App')
 
 input_image = st.file_uploader('Please upload your brain MRI image', type=["jpg", "jpeg", "png"])

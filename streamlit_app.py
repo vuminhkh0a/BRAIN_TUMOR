@@ -21,6 +21,10 @@ input_image = st.file_uploader('Upload image', type=["jpg", "jpeg", "png"])
 if input_image is not None:
   st.write('Received')
   input_image = Image.open(input_image).convert('RGB')
+  st.image(input_image, caption='Received image')
+  st.write(input_image.shape)
+else:
+  st.write('No image')
 
 
 test_transform = v2.Compose([
@@ -58,10 +62,12 @@ classifier = Classifier(4)
 model = nn.Sequential(backbone, classifier)
 model = model.to(device)
 model.load_state_dict(torch.load('best_model_Sequential.pth', weights_only=True, map_location=torch.device('cpu')))
-model.eval()
-with torch.no_grad():
-  input_image = test_transform(input_image).to(device)
-  predicted = model(input_image)
-  st.write(predicted)
+
+if input_image is not None:
+  model.eval()
+  with torch.no_grad():
+    input_image = test_transform(input_image).to(device)
+    predicted = model(input_image)
+    st.write(predicted)
 
 

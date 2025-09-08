@@ -1,6 +1,6 @@
 # 🧠 Brain MRI Diagnosis App
 
-An experimental Streamlit application for detecting brain tumors from medical images. This project is **still under development**.
+This is my first personal project in computer vision for healthcare, and it is **still under development**.
 
 ## Demo App
 
@@ -8,12 +8,10 @@ https://vuminhkhoa-brain-health.streamlit.app/
 
 ## Features
 
-- Upload MRI brain scan images  
-- Early-stage implementation of tumor classification 
-- Trained with dataset from https://github.com/sartajbhuvaji/brain-tumor-classification-dataset
-- Trained with pretrained Resnet50 model using RadImageNet weights
-- Built with **Streamlit** for quick prototyping and deployment  
-- Code written in **Python** with focus on PyTorch
+- Upload MRI brain scan images and classify them into one of four classes: "Glioma", "Meningioma", "No Tumor", or "Pituitary"
+- Trained on the dataset from https://github.com/sartajbhuvaji/brain-tumor-classification-dataset
+- Fine-tuned using a pretrained ResNet50 model with RadImageNet weights
+- Built with **Streamlit** and **PyTorch**
 
 ## Project Status
 
@@ -23,9 +21,9 @@ The app has completed its **main functionality**:
   - Meningioma  
   - No Tumor  
   - Pituitary  
-- ✅ User-friendly interface with Streamlit
-- ✅ Achieved ~90% testing accuracy
-- 🚧 Further improvements planned: Adding tumor segmentation feature
+- ✅ User-friendly interface built with Streamlit  
+- ✅ Achieved ~90% test accuracy  
+- 🚧 Planned improvements: Adding a tumor segmentation feature  
 
 ## Local Setup
 

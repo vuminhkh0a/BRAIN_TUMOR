@@ -20,7 +20,7 @@ input_image = st.file_uploader('Upload image', type=["jpg", "jpeg", "png"])
 
 if input_image:
   st.write('Received')
-  print(type(input_image))
+  st.write(print(type(input_image)))
 
 
 test_transform = v2.Compose([

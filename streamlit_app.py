@@ -1,5 +1,6 @@
 import streamlit as st
+import torch
 
 st.title('Brain Tumor classification')
 
-st.write('Hello world!')
+input = st.image()

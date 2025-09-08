@@ -12,8 +12,12 @@ import torch.nn as nn
 from torchvision.transforms import v2
 from torchvision.models import resnet50
 from sklearn.metrics import multilabel_confusion_matrix, ConfusionMatrixDisplay
+
 import model, page1, page2
 from model import test_transform, model
+from page1 import show_page1
+from page2 import show_page2
+
 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')

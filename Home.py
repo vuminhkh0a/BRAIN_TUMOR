@@ -15,8 +15,8 @@ from sklearn.metrics import multilabel_confusion_matrix, ConfusionMatrixDisplay
 
 import model
 from model import test_transform, model
-import wiki
-from wiki import explain
+import tumor_wiki
+from tumor_wiki import explain
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 

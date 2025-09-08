@@ -66,8 +66,7 @@ if input_image is not None:
   model.eval()
   with torch.no_grad():
     input_image = test_transform(input_image).to(device)
-    st.write(input_image)
-    predicted = model(input_image)
+    predicted = model(input_image.unsqueeze(0))
     st.write(predicted)
 
 

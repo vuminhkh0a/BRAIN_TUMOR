@@ -20,7 +20,7 @@ from tumor_wiki import explain
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-st.title('Brain MRI Diagnosis App')
+st.title('Brain Tumor MRI Diagnosis App')
 st.divider()
 st.markdown('Github repository: https://github.com/vuminhkh0a/BRAIN_TUMOR')
 st.divider()

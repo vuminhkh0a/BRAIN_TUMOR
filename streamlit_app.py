@@ -17,14 +17,14 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 st.title('Brain Tumor classification')
 
-input_image = st.file_uploader('Upload image', type=["jpg", "jpeg", "png"])
+input_image = st.file_uploader('Please upload your brain MRI image', type=["jpg", "jpeg", "png"])
 
 if input_image is not None:
-  st.write('Received')
+  st.write('Image received!')
   input_image = Image.open(input_image).convert('RGB')
-  st.image(input_image, caption='Received image')
+  st.image(input_image)
 else:
-  st.write('No image')
+  st.write('No image is chosen!')
 
 
 test_transform = v2.Compose([

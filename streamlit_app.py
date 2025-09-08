@@ -24,9 +24,9 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 if st.button("Home"):
     st.switch_page("streamlit_app.py")
 if st.button("How to use"):
-    st.switch_page("streamlit_app_page1.py")
+    st.switch_page("pages/page1.py")
 if st.button("About me"):
-    st.switch_page("streamlit_app_page2.py")
+    st.switch_page("pages/page2.py")
 
 
 input_image = st.file_uploader('Please upload your brain MRI image', type=["jpg", "jpeg", "png"])

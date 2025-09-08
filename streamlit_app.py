@@ -38,10 +38,10 @@ if input_image is not None:
 
     # Plot
     prediction = prediction.squeeze().numpy()
-    encode_label = {0:'glioma', 1:'meningioma', 2:'notumor', 3:'pituitary'}
+    encode_label = {0:'Glioma', 1:'Meningioma', 2:'No tumor', 3:'Pituitary'}
     st.write('Predicted class:', encode_label[np.argmax(prediction)])
     fig = plt.figure(figsize=(10, 10))
-    sns.barplot(x=prediction, y=['Glioma', 'Meningioma', 'No tumor', 'Pituitary'], pallete='Set2')
+    sns.barplot(x=prediction, y=['Glioma', 'Meningioma', 'No tumor', 'Pituitary'], palette='Set2')
     plt.xlabel('Confidences')
     plt.ylabel('Classes')
     st.pyplot(fig)

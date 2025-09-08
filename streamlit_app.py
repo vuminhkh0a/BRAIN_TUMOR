@@ -18,7 +18,7 @@ st.title('Brain Tumor classification')
 
 input_image = st.file_uploader('Upload image', type=["jpg", "jpeg", "png"])
 
-if input_image:
+if input_image is not None:
   st.write('Received')
   input_image = np.asarray(bytearray(input_image.read()))
 

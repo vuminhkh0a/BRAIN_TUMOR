@@ -31,6 +31,8 @@ if input_image is not None:
   st.image(input_image)
 else:
   st.write('No image is chosen!')
+  
+st.divider()
 
 if input_image is not None:
   model.eval()

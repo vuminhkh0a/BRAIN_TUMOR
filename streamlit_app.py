@@ -67,9 +67,13 @@ if input_image is not None:
   with torch.no_grad():
     input_image = test_transform(input_image).to(device)
     prediction = model(input_image.unsqueeze(0))
-    sm = m = nn.Softmax(dim=1)
+    sm = nn.Softmax(dim=1)
     
     prediction = sm(prediction)
     st.write(prediction)
+
+# Plot
+prediction = torch.squeeze(prediction).numpy()
+sns.barplot(x=prediction, y=['glioma', 'meningioma', 'notumor', 'pituitary'])
 
 

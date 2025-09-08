@@ -16,9 +16,17 @@ from model import test_transform, model
 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-st.set_page_config(page_title='Brain MRI Diagnosis App')
-st.sidebar.success('Please select a page')
-st.title('Brain MRI Diagnosis App')
+
+# st.set_page_config(page_title='Brain MRI Diagnosis App')
+# st.sidebar.success('Please select a page')
+# st.title('Brain MRI Diagnosis App')
+
+main_page = st.Page(page='streamlit_app.py', title='Brain MRI Diagnosis App', default=True)
+page1 = st.Page(page='streamlit_app_page1.py', title='How to use')
+page2 = st.Page(page='streamlit_app_page2.py', title='About me')
+pg = st.navigation([main_page, page1, page2])
+pg.run()
+
 
 input_image = st.file_uploader('Please upload your brain MRI image', type=["jpg", "jpeg", "png"])
 

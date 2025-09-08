@@ -22,7 +22,6 @@ if input_image is not None:
   st.write('Received')
   input_image = Image.open(input_image).convert('RGB')
   st.image(input_image, caption='Received image')
-  st.write(type(input_image))
 else:
   st.write('No image')
 

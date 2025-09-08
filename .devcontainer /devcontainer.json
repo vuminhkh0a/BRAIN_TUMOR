@@ -6,7 +6,7 @@
         "codespaces": {
           "openFiles": [
             "README.md",
-            "streamlit_app.py"
+            "Home.py"
           ]
         },
         "vscode": {
@@ -27,7 +27,7 @@
     // Use 'postAttachCommand' to run commands after a tool has attached to the container.
     // Start the app.
     "postAttachCommand": {
-        "server": "streamlit run streamlit_app.py --server.enableCORS false --server.enableXsrfProtection false"
+        "server": "streamlit run Home.py --server.enableCORS false --server.enableXsrfProtection false"
     },
     "portsAttributes": {
         "8501": {

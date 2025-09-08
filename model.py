@@ -4,6 +4,8 @@ import torch.nn as nn
 from torchvision.transforms import v2
 from torchvision.models import resnet50
 
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
 test_transform = v2.Compose([
     v2.PILToTensor(),
     v2.ToDtype(torch.float32, scale=True),

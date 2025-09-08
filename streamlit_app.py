@@ -73,7 +73,8 @@ if input_image is not None:
     st.write(prediction)
 
 # Plot
-prediction = torch.squeeze(prediction).numpy()
+prediction = prediction.squeeze().numpy()
 sns.barplot(x=prediction, y=['glioma', 'meningioma', 'notumor', 'pituitary'])
+plt.show()
 
 

@@ -6,6 +6,5 @@ seaborn
 matplotlib
 torch
 torchvision
-scikit-learn
 huggingface_hub
 Pillow

@@ -67,7 +67,7 @@ if input_image is not None:
   with torch.no_grad():
     input_image = test_transform(input_image).to(device)
     prediction = model(input_image.unsqueeze(0))
-    prediction = nn.Softmax(prediction)
+    prediction = nn.functional.Softmax(prediction)
     st.write(prediction)
 
 

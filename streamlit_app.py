@@ -22,7 +22,7 @@ if input_image:
   st.write('Received')
   st.image(input_image)
 
-print(type(input_image))
+st.write(print(type(input_image)))
 
 test_transform = v2.Compose([
     v2.PILToTensor(),

@@ -1,1 +1,10 @@
 streamlit>=1.26.0
+numpy
+pandas
+seaborn
+matplotlib
+torch
+scikit-learn
+huggingface_hub
+Pillow
+opencv-python

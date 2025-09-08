@@ -54,7 +54,7 @@ if input_image is not None:
     case = encode_label[np.argmax(prediction)]
     st.markdown(f'### Result: {case}')
     fig = plt.figure(figsize=(10, 10))
-    sns.barplot(x=prediction, y=['Glioma', 'Meningioma', 'No tumor', 'Pituitary'], palette='hls')
+    sns.barplot(x=prediction, y=['Glioma', 'Meningioma', 'No tumor', 'Pituitary'], palette='Set2')
     plt.xlabel('Confidences')
     plt.ylabel('Classes')
     st.pyplot(fig)

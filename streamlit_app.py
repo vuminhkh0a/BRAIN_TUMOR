@@ -20,7 +20,7 @@ input_image = st.file_uploader('Upload image', type=["jpg", "jpeg", "png"])
 
 if input_image is not None:
   st.write('Received')
-  input_image = Image.open(input_image).convert('RGB').resize((256, 256))
+  input_image = Image.open(input_image).convert('RGB')
 
 
 test_transform = v2.Compose([

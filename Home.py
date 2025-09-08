@@ -15,6 +15,8 @@ from sklearn.metrics import multilabel_confusion_matrix, ConfusionMatrixDisplay
 
 import model
 from model import test_transform, model
+import wiki
+from wiki import explain
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -47,16 +49,18 @@ if input_image is not None:
     sm = nn.Softmax(dim=1)
     prediction = sm(prediction)
 
-    # Plot
     prediction = prediction.squeeze().numpy()
     encode_label = {0:'Glioma', 1:'Meningioma', 2:'No tumor', 3:'Pituitary'}
-    st.markdown(f'### Result: {encode_label[np.argmax(prediction)]}')
+    case = encode_label[np.argmax(prediction)]
+    st.markdown(f'### Result: {case}')
     fig = plt.figure(figsize=(10, 10))
     sns.barplot(x=prediction, y=['Glioma', 'Meningioma', 'No tumor', 'Pituitary'], palette='Set2')
     plt.xlabel('Confidences')
     plt.ylabel('Classes')
     st.pyplot(fig)
 
-
+    st.divider()
+    explain(case)
+  
 
 

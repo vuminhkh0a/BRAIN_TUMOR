@@ -10,7 +10,7 @@ https://vuminhkhoa-brain-health.streamlit.app/
 
 - Upload MRI brain scan images and classify them into one of four classes: "Glioma", "Meningioma", "No Tumor", or "Pituitary"
 - Trained on the dataset from https://github.com/sartajbhuvaji/brain-tumor-classification-dataset
-- Fine-tuned using a pretrained ResNet50 model with RadImageNet weights
+- Fine-tuned using a pretrained PyTorch ResNet50 model with RadImageNet weights from https://huggingface.co/Lab-Rasool/RadImageNet
 - Built with **Streamlit** and **PyTorch**
 
 ## Project Status

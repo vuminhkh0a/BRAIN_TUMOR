@@ -25,7 +25,6 @@ main_page = st.Page(page='streamlit_app.py', title='Brain MRI Diagnosis App', de
 page1 = st.Page(page='streamlit_app_page1.py', title='How to use')
 page2 = st.Page(page='streamlit_app_page2.py', title='About me')
 pg = st.navigation([main_page, page1, page2])
-pg.run()
 
 
 input_image = st.file_uploader('Please upload your brain MRI image', type=["jpg", "jpeg", "png"])

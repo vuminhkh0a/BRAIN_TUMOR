@@ -59,13 +59,14 @@ class Backbone(nn.Module):
 backbone = Backbone()
 classifier = Classifier(4) 
 model = nn.Sequential(backbone, classifier)
-model = model.to(device)
 model.load_state_dict(torch.load('best_model_Sequential.pth', weights_only=True, map_location=torch.device('cpu')))
+model = model.to(device)
 
 if input_image is not None:
   model.eval()
   with torch.no_grad():
     input_image = test_transform(input_image).to(device)
+    st.write(input_image)
     predicted = model(input_image)
     st.write(predicted)
 

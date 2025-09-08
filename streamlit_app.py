@@ -74,7 +74,7 @@ if input_image is not None:
     # Plot
     prediction = prediction.squeeze().numpy()
     encode_label = {0:'glioma', 1:'meningioma', 2:'notumor', 3:'pituitary'}
-    st.write('Predicted class:': encode_label[np.argmax(prediction)])
+    st.write('Predicted class:', encode_label[np.argmax(prediction)])
     fig = plt.figure(figsize=(10, 10))
     sns.barplot(x=prediction, y=['glioma', 'meningioma', 'notumor', 'pituitary'])
     st.pyplot(fig)

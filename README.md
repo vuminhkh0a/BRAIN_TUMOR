@@ -4,18 +4,14 @@ An experimental Streamlit application for detecting brain tumors from medical im
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://vuminhkhoa-brain-health.streamlit.app/)
-
-## GitHub Codespaces
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/vuminhkh0a/BRAIN_TUMOR?quickstart=1)
+https://vuminhkhoa-brain-health.streamlit.app/
 
 ## Features
 
 - Upload MRI brain scan images  
 - Early-stage implementation of tumor classification 
-- Using dataset from https://github.com/sartajbhuvaji/brain-tumor-classification-dataset
-- Using pretrained Resnet50 model with RadImageNet weights
+- Trained with dataset from https://github.com/sartajbhuvaji/brain-tumor-classification-dataset
+- Trained with pretrained Resnet50 model using RadImageNet weights
 - Built with **Streamlit** for quick prototyping and deployment  
 - Code written in **Python** with focus on PyTorch
 

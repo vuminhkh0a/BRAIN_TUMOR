@@ -50,7 +50,7 @@ if input_image is not None:
     # Plot
     prediction = prediction.squeeze().numpy()
     encode_label = {0:'Glioma', 1:'Meningioma', 2:'No tumor', 3:'Pituitary'}
-    st.markdown(f'###Result: {encode_label[np.argmax(prediction)]}')
+    st.markdown(f'### Result: {encode_label[np.argmax(prediction)]}')
     fig = plt.figure(figsize=(10, 10))
     sns.barplot(x=prediction, y=['Glioma', 'Meningioma', 'No tumor', 'Pituitary'], palette='Set2')
     plt.xlabel('Confidences')

@@ -25,11 +25,9 @@ The app has completed its **main functionality**:
   - Pituitary  
 - ✅ User-friendly interface with Streamlit
 - ✅ Achieved ~90% testing accuracy
-- 🚧 Further improvements planned: 
+- 🚧 Further improvements planned: Adding tumor segmentation feature
 
 ## Local Setup
-
-To run the app locally:
 
 ```bash
 git clone https://github.com/vuminhkh0a/BRAIN_TUMOR.git

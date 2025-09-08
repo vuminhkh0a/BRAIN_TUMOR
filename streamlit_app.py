@@ -75,7 +75,7 @@ if input_image is not None:
 
     # Plot
     prediction = prediction.squeeze().numpy()
-    s = so.barplot(x=prediction, y=['glioma', 'meningioma', 'notumor', 'pituitary'])
+    s = so.Plot(x=prediction, y=['glioma', 'meningioma', 'notumor', 'pituitary'])
     st.pyplot(s)
 
 

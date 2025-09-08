@@ -14,8 +14,8 @@ from sklearn.metrics import multilabel_confusion_matrix, ConfusionMatrixDisplay
 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
-st.title('Brain Tumor classification')
+st.set_page_config(page_title='Brain MRI Diagnosis App')
+#st.title('Brain MRI Diagnosis App')
 
 input_image = st.file_uploader('Please upload your brain MRI image', type=["jpg", "jpeg", "png"])
 

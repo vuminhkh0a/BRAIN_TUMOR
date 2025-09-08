@@ -20,8 +20,8 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 st.title('Brain MRI Diagnosis App')
 st.divider()
-st.write('The model will take brain scan MRI image (.jpg, .jpeg, .png) as input')
-st.write('The output of the model will be one of four classes: "Glioma", "Meningioma", "No Tumor", or "Pituitary"')
+st.write('The model accepts brain scan MRI image (.jpg, .jpeg, .png) as input')
+st.markdown("The model predicts one of four brain health conditions based on the MRI scan: **Glioma**, **Meningioma**, **Pituitary tumor**, or **No Tumor (healthy)**.")
 st.divider()
 input_image = st.file_uploader('Please upload your brain MRI image', type=["jpg", "jpeg", "png"])
 
@@ -45,7 +45,7 @@ if input_image is not None:
     # Plot
     prediction = prediction.squeeze().numpy()
     encode_label = {0:'Glioma', 1:'Meningioma', 2:'No tumor', 3:'Pituitary'}
-    st.write('Predicted class:', encode_label[np.argmax(prediction)])
+    st.write('Result:', encode_label[np.argmax(prediction)])
     fig = plt.figure(figsize=(10, 10))
     sns.barplot(x=prediction, y=['Glioma', 'Meningioma', 'No tumor', 'Pituitary'], palette='Set2')
     plt.xlabel('Confidences')

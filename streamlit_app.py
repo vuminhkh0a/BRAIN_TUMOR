@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_option_menu import option_menu
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -11,7 +12,7 @@ import torch.nn as nn
 from torchvision.transforms import v2
 from torchvision.models import resnet50
 from sklearn.metrics import multilabel_confusion_matrix, ConfusionMatrixDisplay
-import model
+import model, page1, page2
 from model import test_transform, model
 
 
@@ -33,32 +34,37 @@ selected = option_menu(
             orientation="horizontal",
 )
 
+if selected == 'Home':
+            input_image = st.file_uploader('Please upload your brain MRI image', type=["jpg", "jpeg", "png"])
+            
+            if input_image is not None:
+              st.write('Image received!')
+              input_image = Image.open(input_image).convert('RGB')
+              st.image(input_image)
+            else:
+              st.write('No image is chosen!')
+            
+            if input_image is not None:
+              model.eval()
+              with torch.no_grad():
+                input_image = test_transform(input_image).to(device)
+                prediction = model(input_image.unsqueeze(0))
+                sm = nn.Softmax(dim=1)
+                prediction = sm(prediction)
+            
+                # Plot
+                prediction = prediction.squeeze().numpy()
+                encode_label = {0:'Glioma', 1:'Meningioma', 2:'No tumor', 3:'Pituitary'}
+                st.write('Predicted class:', encode_label[np.argmax(prediction)])
+                fig = plt.figure(figsize=(10, 10))
+                sns.barplot(x=prediction, y=['Glioma', 'Meningioma', 'No tumor', 'Pituitary'], palette='Set2')
+                plt.xlabel('Confidences')
+                plt.ylabel('Classes')
+                st.pyplot(fig)
+if selected == 'How to use':
+            show_page1()
+if selected == 'About me':
+            show_page2()
 
-input_image = st.file_uploader('Please upload your brain MRI image', type=["jpg", "jpeg", "png"])
-
-if input_image is not None:
-  st.write('Image received!')
-  input_image = Image.open(input_image).convert('RGB')
-  st.image(input_image)
-else:
-  st.write('No image is chosen!')
-
-if input_image is not None:
-  model.eval()
-  with torch.no_grad():
-    input_image = test_transform(input_image).to(device)
-    prediction = model(input_image.unsqueeze(0))
-    sm = nn.Softmax(dim=1)
-    prediction = sm(prediction)
-
-    # Plot
-    prediction = prediction.squeeze().numpy()
-    encode_label = {0:'Glioma', 1:'Meningioma', 2:'No tumor', 3:'Pituitary'}
-    st.write('Predicted class:', encode_label[np.argmax(prediction)])
-    fig = plt.figure(figsize=(10, 10))
-    sns.barplot(x=prediction, y=['Glioma', 'Meningioma', 'No tumor', 'Pituitary'], palette='Set2')
-    plt.xlabel('Confidences')
-    plt.ylabel('Classes')
-    st.pyplot(fig)
 
 

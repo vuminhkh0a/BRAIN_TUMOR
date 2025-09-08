@@ -20,7 +20,7 @@ input_image = st.file_uploader('Upload image', type=["jpg", "jpeg", "png"])
 
 if input_image is not None:
   st.write('Received')
-  input_image = np.asarray(bytearray(input_image.read())).resize((256, 256))
+  input_image = np.asarray(bytearray(input_image.getvalue())).resize((256, 256))
 
 plt.imshow(input_image)
 

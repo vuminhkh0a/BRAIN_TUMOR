@@ -20,15 +20,13 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 st.title('Brain MRI Diagnosis App')
 st.divider()
-st.write('The model accepts brain scan MRI image (.jpg, .jpeg, .png) as input')
-st.markdown("### Model Output Explanation")
+st.markdown('### Model Input')
+st.markdown('The model accepts brain scan MRI image (.jpg, .jpeg, .png) as input')
+st.markdown('### Model Output Explanation')
 st.markdown("""
 The model's output corresponds to one of four **distinct medical conditions** based on the MRI scan:
-
-- **Glioma** – a type of brain tumor  
-- **Meningioma** – another form of brain tumor  
-- **Pituitary** – a tumor affecting the pituitary gland  
-- **No Tumor** – indicates a healthy brain with no signs of tumor
+- **Glioma**, **Meningioma**, **Pituitary** – types of brain tumor  
+- **No Tumor** – healthy brain with no signs of tumor
 """)
 st.divider()
 input_image = st.file_uploader('Please upload your brain MRI image', type=["jpg", "jpeg", "png"])

@@ -1,4 +1,4 @@
-# 🧠 Brain MRI Diagnosis App
+# 🧠 Brain Tumor MRI Diagnosis App
 
 This is my first personal project in computer vision for healthcare, and it is **still under development**.
 
@@ -23,7 +23,7 @@ The app has completed its **main functionality**:
   - Pituitary  
 - ✅ User-friendly interface built with Streamlit  
 - ✅ Achieved ~90% test accuracy  
-- 🚧 Planned improvements: Adding a tumor segmentation feature  
+- 🚧 Planned improvements: Adding tumor segmentation feature  
 
 ## Local Setup
 

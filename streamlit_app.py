@@ -60,6 +60,9 @@ model = nn.Sequential(backbone, classifier)
 model = model.to(device)
 model.load_state_dict(torch.load('best_model_Sequential.pth', weights_only=True, map_location=torch.device('cpu')))
 model.eval()
-
+with torch.no_grad():
+  input_image = test_transform(input_image).to(device)
+  predicted = model(input_image)
+  st.write(predicted)
 
 

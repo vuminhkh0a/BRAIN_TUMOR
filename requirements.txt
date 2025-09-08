@@ -9,4 +9,3 @@ torchvision
 scikit-learn
 huggingface_hub
 Pillow
-opencv-python

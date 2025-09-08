@@ -19,8 +19,8 @@ from model import test_transform, model
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 st.title('Brain MRI Diagnosis App')
-st.write('The model will take brain scan MRI image (.jpg, .jpeg, .png) as input')
-st.write('The output of the model will be one of four classes: "Glioma", "Meningioma", "No Tumor", or "Pituitary"')
+st.header('The model will take brain scan MRI image (.jpg, .jpeg, .png) as input')
+st.header('The output of the model will be one of four classes: "Glioma", "Meningioma", "No Tumor", or "Pituitary"')
 
 input_image = st.file_uploader('Please upload your brain MRI image', type=["jpg", "jpeg", "png"])
 

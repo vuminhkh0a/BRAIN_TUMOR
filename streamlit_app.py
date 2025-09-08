@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import seaborn as sns
+import seaborn.objects as so
 import matplotlib.pyplot as plt
 import os
 from PIL import Image
@@ -74,7 +75,7 @@ if input_image is not None:
 
     # Plot
     prediction = prediction.squeeze().numpy()
-    sns.barplot(x=prediction, y=['glioma', 'meningioma', 'notumor', 'pituitary'])
-    plt.show()
+    s = so.barplot(x=prediction, y=['glioma', 'meningioma', 'notumor', 'pituitary'])
+    st.pyplot(s)
 
 

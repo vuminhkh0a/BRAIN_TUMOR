@@ -52,7 +52,9 @@ class Backbone(nn.Module):
     def forward(self, x):
         x = self.backbone(x)
         return x
-
+      
+model = nn.Sequential(backbone, classifier)
+model = model.to(device)
 model.load_state_dict(torch.load('best_model_Sequential.pth', weights_only=True))
 model.eval()
 

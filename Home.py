@@ -22,6 +22,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 st.title('Brain MRI Diagnosis App')
 st.divider()
+st.markdown('Github repository: https://github.com/vuminhkh0a/BRAIN_TUMOR')
 st.markdown('### Model input')
 st.markdown('The model accepts brain scan MRI image (.jpg, .jpeg, .png) as input')
 st.markdown('### Model output')

@@ -36,8 +36,6 @@ if input_image is not None:
   st.write('Image received!')
   input_image = Image.open(input_image).convert('RGB')
   st.image(input_image)
-else:
-  st.write('No image is chosen!')
   
 st.divider()
 

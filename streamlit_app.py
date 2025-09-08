@@ -19,12 +19,19 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 st.title('Brain MRI Diagnosis App')
 
-if st.button("Home"):
-    st.switch_page("streamlit_app.py")
-if st.button("How to use"):
-    st.switch_page("pages/page1.py")
-if st.button("About me"):
-    st.switch_page("pages/page2.py")
+# if st.button("Home"):
+#     st.switch_page("streamlit_app.py")
+# if st.button("How to use"):
+#     st.switch_page("pages/page1.py")
+# if st.button("About me"):
+#     st.switch_page("pages/page2.py")
+
+selected = option_menu(
+            menu_title=None,  # required
+            options=["Home", "How to use", "About me"],  # required
+            default_index=0,  # optional
+            orientation="horizontal",
+)
 
 
 input_image = st.file_uploader('Please upload your brain MRI image', type=["jpg", "jpeg", "png"])

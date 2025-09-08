@@ -20,7 +20,7 @@ input_image = st.file_uploader('Upload image', type=["jpg", "jpeg", "png"])
 
 if input_image:
   st.write('Received')
-  st.image(input_image)
+  input_image = np.asarray(bytearray(input_image.read()))
 
 st.write(print(type(input_image)))
 

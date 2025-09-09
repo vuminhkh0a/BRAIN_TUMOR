@@ -18,7 +18,6 @@ from tumor_wiki import explain
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-st.logo('assets/amnesia.png')
 st.title('Brain Tumor MRI Diagnosis App')
 st.divider()
 st.markdown('Github repository: https://github.com/vuminhkh0a/BRAIN_TUMOR')

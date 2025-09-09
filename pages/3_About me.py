@@ -1,5 +1,7 @@
 import streamlit as st
-
+import setup
+from setup import overall
+overall()
 st.title('About me')
 st.write('My name is Khoa, I am a sophomore at Hanoi University of Science and Technology. I am interested in Computer Vision research')
 st.link_button(label='Github', url='https://github.com/vuminhkh0a/vuminhkh0a')

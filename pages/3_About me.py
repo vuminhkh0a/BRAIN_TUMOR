@@ -14,9 +14,9 @@ with col1:
     st.image("assets/profile_image.png", width=230)
 
 with col2:
-    st.title("Sven Bosau", anchor=False)
+    st.title("Vu Minh Khoa", anchor=False)
     st.write(
-        "Senior Data Analyst, assisting enterprises by supporting data-driven decision-making."
+        "Sophomore at Hanoi University of Science and Technology. Interested in Computer Vision for Medical research"
     )
     if st.button("✉️ Contact Me"):
         show_contact_form()
@@ -24,7 +24,7 @@ with col2:
 
 # --- EXPERIENCE & QUALIFICATIONS ---
 st.write("\n")
-st.subheader("Experience & Qualifications", anchor=False)
+st.subheader("Experience", anchor=False)
 st.write(
     """
     - 7 Years experience extracting actionable insights from data
@@ -36,7 +36,7 @@ st.write(
 
 # --- SKILLS ---
 st.write("\n")
-st.subheader("Hard Skills", anchor=False)
+st.subheader("Skills", anchor=False)
 st.write(
     """
     - Programming: Python (Scikit-learn, Pandas), SQL, VBA

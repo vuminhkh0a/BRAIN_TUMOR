@@ -17,6 +17,7 @@ import tumor_wiki
 from tumor_wiki import explain
 import setup
 from setup import overall
+overall()
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 

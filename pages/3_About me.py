@@ -33,18 +33,14 @@ with col2:
         "interested in Computer Vision for medical and healthcare research"
     )
 
-    btn_col1, btn_col2, btn_col3 = st.columns([1,1,1], gap="small")
+    btn_col1, btn_col2 = st.columns([1,1], gap="small")
 
     with btn_col1:
         st.link_button(label="Github", url="https://github.com/vuminhkh0a")
 
     with btn_col2:
-        st.link_button(label="Linkedin", url="https://www.linkedin.com/in/vmkhoa28/")
-
-    with btn_col3:
         if st.button("✉️ Contact Me"):
-            show_contact_form()
-
+            show_contact_form()        
 
 
 # --- EXPERIENCE & QUALIFICATIONS ---

@@ -33,6 +33,3 @@ cd BRAIN_TUMOR
 pip install -r requirements.txt
 streamlit run Home.py
 ```
-
-## Tutorial
-![](tutorial)

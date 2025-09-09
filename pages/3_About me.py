@@ -33,7 +33,7 @@ with col2:
         "interested in Computer Vision for medical and healthcare research"
     )
 
-    btn_col1, btn_col2, btn_col3 = st.columns(3, gap="small")
+    btn_col1, btn_col2, btn_col3 = st.columns([1,1,1], gap="xsmall")
 
     with btn_col1:
         st.link_button(label="Github", url="https://github.com/vuminhkh0a")

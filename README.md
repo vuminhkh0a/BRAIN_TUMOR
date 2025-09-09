@@ -4,7 +4,7 @@ This is my first personal project in computer vision for healthcare, and it is *
 
 ## Demo App
 
-https://vuminhkhoa-brain-health.streamlit.app/
+Link of the demo app is here: https://vuminhkhoa-brain-health.streamlit.app/
 
 ## Features
 

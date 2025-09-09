@@ -20,13 +20,35 @@ with col2:
         "interested in Computer Vision for medical and healthcare research"
     )
 
-    btn_col1, btn_col2 = st.columns([1,1], gap="small")
+    btn_col1, btn_col2, btn_col3 = st.columns([1,1,1], gap="small")
 
     with btn_col1:
-        st.link_button(label="Github", url="https://github.com/vuminhkh0a")
+        st.markdown(
+            """
+            <a href="https://github.com/vuminhkh0a" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+                     width="24" style="vertical-align:middle;margin-right:6px;">
+                Github
+            </a>
+            """,
+            unsafe_allow_html=True
+        )
+
     with btn_col2:
+        st.markdown(
+            """
+            <a href="https://www.linkedin.com/in/vmkhoa28/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" 
+                     width="24" style="vertical-align:middle;margin-right:6px;">
+                Linkedin
+            </a>
+            """,
+            unsafe_allow_html=True
+        )
+
+    with btn_col3:
         if st.button("✉️ Contact Me"):
-            show_contact_form()        
+            show_contact_form()    
 
 
 # --- EXPERIENCE & QUALIFICATIONS ---

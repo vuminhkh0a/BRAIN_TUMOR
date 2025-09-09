@@ -53,26 +53,32 @@ with col2:
             show_contact_form()    
 
 
-# --- EXPERIENCE & QUALIFICATIONS ---
 st.write("\n")
-st.subheader("Experience", anchor=False)
+st.subheader("Projects", anchor=False)
 st.write(
     """
-    - 7 Years experience extracting actionable insights from data
-    - Strong hands-on experience and knowledge in Python and Excel
-    - Good understanding of statistical principles and their respective applications
-    - Excellent team-player and displaying a strong sense of initiative on tasks
+    - Brain tumor MRI diagnosis app
+    - Skin lesion segmentation
+    - Custom ResNet50 for object classification with AdamW on CIFAR-10
+    - Churn prediction using Machine Learning
     """
 )
 
-# --- SKILLS ---
+st.write("\n")
+st.subheader("Experiences", anchor=False)
+st.write(
+    """
+    - Research Member, AIMA Warm-up Research Program (Aug 2025 – Present)
+    - Research Intern, Institute for AI Innovation and Societal Impact - AI4LIFE, Hanoi University of Science and Technology (Jan 2025 - May 2025)
+    """
+)
+
 st.write("\n")
 st.subheader("Skills", anchor=False)
 st.write(
     """
-    - Programming: Python (Scikit-learn, Pandas), SQL, VBA
-    - Data Visualization: PowerBi, MS Excel, Plotly
-    - Modeling: Logistic regression, linear regression, decision trees
-    - Databases: Postgres, MongoDB, MySQL
+    - Programming: Python (PyTorch, Scikit-learn, Pandas, Numpy, Seaborn, Matplotlib), C++, SQL
+    - Knowledge: Fundamental knowledge of Machine Learning and Deep Learning
+    - Languages: English (IELTS 7.0)
     """
 )

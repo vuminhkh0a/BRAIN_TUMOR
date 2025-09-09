@@ -8,19 +8,6 @@ def show_contact_form():
     contact_form()
 
 
-# --- HERO SECTION ---
-# col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
-# with col1:
-#     st.image("assets/profile_image.png", width=230)
-
-# with col2:
-#     st.title("Vu Minh Khoa", anchor=False)
-#     st.write("Sophomore at Hanoi University of Science and Technology, interested in Computer Vision for medical and healthcare research")
-#     st.link_button(label='Github', url='https://github.com/vuminhkh0a')
-#     st.link_button(label='Linkedin', url='https://www.linkedin.com/in/vmkhoa28/')
-#     if st.button("✉️ Contact Me"):
-#         show_contact_form()
-
 col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
 
 with col1:
@@ -36,7 +23,17 @@ with col2:
     btn_col1, btn_col2 = st.columns([1,1], gap="small")
 
     with btn_col1:
-        st.link_button(label="Github", url="https://github.com/vuminhkh0a")
+        #st.link_button(label="Github", url="https://github.com/vuminhkh0a")
+        st.markdown(
+            """
+            <a href="https://github.com/vuminhkh0a" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+                     width="24" style="vertical-align:middle;margin-right:6px;">
+                Github
+            </a>
+            """,
+            unsafe_allow_html=True
+        )
 
     with btn_col2:
         if st.button("✉️ Contact Me"):

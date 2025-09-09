@@ -15,9 +15,9 @@ with col1:
 
 with col2:
     st.title("Vu Minh Khoa", anchor=False)
-    st.write(
-        "Sophomore at Hanoi University of Science and Technology. Interested in Computer Vision for Medical research"
-    )
+    st.write("Sophomore at Hanoi University of Science and Technology, interested in Computer Vision for medical and healthcare research")
+    st.link_button(label='Github', url='https://github.com/vuminhkh0a')
+    st.link_button(label='Linkedin', url='https://www.linkedin.com/in/vmkhoa28/')
     if st.button("✉️ Contact Me"):
         show_contact_form()
 

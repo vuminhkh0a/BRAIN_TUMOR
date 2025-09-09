@@ -23,18 +23,7 @@ with col2:
     btn_col1, btn_col2 = st.columns([1,1], gap="small")
 
     with btn_col1:
-        #st.link_button(label="Github", url="https://github.com/vuminhkh0a")
-        st.markdown(
-            """
-            <a href="https://github.com/vuminhkh0a" target="_blank">
-                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
-                     width="24" style="vertical-align:middle;margin-right:6px;">
-                Github
-            </a>
-            """,
-            unsafe_allow_html=True
-        )
-
+        st.link_button(label="Github", url="https://github.com/vuminhkh0a")
     with btn_col2:
         if st.button("✉️ Contact Me"):
             show_contact_form()        

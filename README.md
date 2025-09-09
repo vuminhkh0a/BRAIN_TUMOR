@@ -1,6 +1,11 @@
 # 🧠 Brain Tumor MRI Diagnosis App
 
 This is my first personal project in computer vision for healthcare, and it is **still under development**.
+The model accepts brain scan MRI image (.jpg, .jpeg, .png) as input and it classified to one of four distinct medical conditions based on the MRI scan: 
+- Glioma  
+- Meningioma
+- No Tumor  
+- Pituitary 
 
 ## Demo App
 
@@ -16,11 +21,7 @@ Link of the demo app is here: https://vuminhkhoa-brain-health.streamlit.app/
 ## Project Status
 
 The app has completed its **main functionality**:  
-- ✅ MRI brain scan **classification into 4 classes**:  
-  - Glioma  
-  - Meningioma  
-  - No Tumor  
-  - Pituitary  
+- ✅ MRI brain scan **classification into 4 classes**
 - ✅ User-friendly interface built with Streamlit  
 - ✅ Achieved ~90% test accuracy  
 - 🚧 Planned improvements: Adding tumor segmentation feature  

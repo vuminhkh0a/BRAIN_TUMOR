@@ -35,4 +35,4 @@ streamlit run Home.py
 ```
 
 ## Tutorial
-[![](tutorial)
+![](tutorial)

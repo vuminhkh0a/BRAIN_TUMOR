@@ -32,5 +32,7 @@ git clone https://github.com/vuminhkh0a/BRAIN_TUMOR.git
 cd BRAIN_TUMOR
 pip install -r requirements.txt
 streamlit run Home.py
+```
 
 ## Tutorial
+[![](tutorial)

@@ -15,6 +15,8 @@ import model
 from model import test_transform, model
 import tumor_wiki
 from tumor_wiki import explain
+import setup
+from setup import overall
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 

@@ -11,6 +11,7 @@ The model accepts brain scan MRI image (.jpg, .jpeg, .png) as input and it class
 
 Link of the demo app is here: https://vuminhkhoa-brain-health.streamlit.app/
 > ⚠️ This app is hosted on Streamlit Community Cloud, so it may take a little time to load at the beginning.
+[![Tutorial video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=NZRNdIJdrVk)
 
 ## Features
 

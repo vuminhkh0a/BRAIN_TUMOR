@@ -35,7 +35,7 @@ The model's output corresponds to one of four **distinct medical conditions** ba
 """)
 st.divider()
 st.markdown('### Upload image')
-input_image = st.file_uploader('Please upload your brain MRI image', type=["jpg", "jpeg", "png"])
+input_image = st.file_uploader('⚠️ This app is hosted on Streamlit Community Cloud, so it may take a little time to load at the beginning.', type=["jpg", "jpeg", "png"])
 
 if input_image is not None:
   st.write('Image received!')

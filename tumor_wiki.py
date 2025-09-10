@@ -22,7 +22,7 @@ def explain(case):
         )
         st.link_button("Wikipedia - Glioma", "https://en.wikipedia.org/wiki/Glioma")
         st.link_button("NIH - Glioma", "https://www.cancer.gov/types/brain/patient/adult-brain-treatment-pdq#_222")
-        st.link_button("Mayo Clinic - Glioma", "https://www.mayoclinic.org/diseases-conditions/glioma")
+        st.link_button("Mayo Clinic - Glioma", "https://www.mayoclinic.org/diseases-conditions/glioma/symptoms-causes/syc-20350251")
 
     elif case == 'Meningioma':
         st.markdown(

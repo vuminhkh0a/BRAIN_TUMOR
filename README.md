@@ -29,7 +29,7 @@ The app has completed its **main functionality**:
 - ✅ MRI brain scan **classification into 4 classes**
 - ✅ User-friendly interface built with Streamlit  
 - ✅ Achieved ~90% test accuracy  
-- 🚧 Planned improvements: Adding tumor segmentation feature  
+- 🚧 Planned improvements: Adding tumor segmentation feature and chatbot
 
 ## Local Setup
 

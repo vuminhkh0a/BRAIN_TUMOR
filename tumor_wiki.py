@@ -80,6 +80,6 @@ def explain(case):
         )
         st.link_button("Wikipedia - Pituitary tumor", "https://en.wikipedia.org/wiki/Pituitary_tumor")
         st.link_button("NIH - Pituitary tumor", "https://www.cancer.gov/types/pituitary/patient/pituitary-treatment-pdq")
-        st.link_button("Cleveland Clinic - Pituitary tumor", "https://my.clevelandclinic.org/health/diseases/17582-pituitary-tumors")
+        st.link_button("Cleveland Clinic - Pituitary tumor", "https://my.clevelandclinic.org/podcasts/neuro-pathways/pituitary-disorders-medical-and-surgical-management")
 
     return

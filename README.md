@@ -17,7 +17,7 @@ Link of the demo app is here: https://vuminhkhoa-brain-health.streamlit.app/
 ### [Turorial Video](https://youtu.be/NZRNdIJdrVk)
 
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=NZRNdIJdrVk)
+[![amnesia.png](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=NZRNdIJdrVk)
 
 
 ## Features

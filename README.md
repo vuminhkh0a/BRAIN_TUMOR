@@ -11,7 +11,9 @@ The model accepts brain scan MRI image (.jpg, .jpeg, .png) as input and it class
 
 Link of the demo app is here: https://vuminhkhoa-brain-health.streamlit.app/
 > ⚠️ This app is hosted on Streamlit Community Cloud, so it may take a little time to load at the beginning.
+[![Watch the video](https://img.youtube.com/vi/NZRNdIJdrVk/maxresdefault.jpg)](https://youtu.be/NZRNdIJdrVk)
 
+### [Turorial Video](https://youtu.be/NZRNdIJdrVk)
 ## Features
 
 - Upload MRI brain scan images and classify them into one of four classes: "Glioma", "Meningioma", "No Tumor", or "Pituitary"
